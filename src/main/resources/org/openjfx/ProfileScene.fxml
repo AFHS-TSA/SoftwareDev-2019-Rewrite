@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.text.Font?>
 
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="222.0" layoutY="14.0" prefHeight="39.0" prefWidth="157.0" text="Welcome Back!" textAlignment="CENTER">
-               <font>
-                  <Font size="23.0" />
-               </font>
-            </Label>
-            <Button layoutX="223.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="156.0" text="Find a Tutor" />
-            <Button layoutX="222.0" layoutY="112.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="156.0" text="Update Class Preferences" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="275.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@filler.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="226.0" layoutY="76.0" text="UserTag" />
+            <TextArea layoutX="204.0" layoutY="118.0" prefHeight="70.0" prefWidth="193.0" text="Bio..." />
+            <Button layoutX="234.0" layoutY="204.0" mnemonicParsing="false" text="Change Profile Picture" />
+            <Button layoutX="275.0" layoutY="336.0" mnemonicParsing="false" text="Done" />
          </children>
       </AnchorPane>
    </center>
